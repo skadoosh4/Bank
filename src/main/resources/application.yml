@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Bank
+  datasource:
+    url: jdbc:mysql://localhost:3306/nobs
+    username: root
+    password: skadoosh
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: mappings , info , health , metrics , beans , env , loggers , threaddump
